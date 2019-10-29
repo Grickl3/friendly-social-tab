@@ -34,21 +34,9 @@
 		</div><!-- SQGOPT CTA -->
 
 
-		<div id="sqgopt-trigger-box" class="sqgopt__trigger-box">
+		<div id="#" class="friendly__box">
 			<img class="sqgopt__email-icon" src="email.svg" alt="email opt in">
 		</div><!-- SQGOPT TRIGGER -->
-
-		<div id="sqgopt-modal" class="hidden">
-			<div id="sqgopt-screen" class="screen"></div>
-			
-			<div class="sqgopt__modal-window">
-			<div id="sqgopt-closeX" class="close-x">
-				<div class="arm arm-1"></div>
-				<div class="arm arm-2"></div>
-			</div>
-				<p>Insert Mailchimp form here.</p>
-			</div><!-- MODAL WINDOW -->
-		</div><!-- SQGOPT MODAL -->
 
 	<!-- END SQG OPT -->
 
@@ -66,44 +54,7 @@
 
 	<script type="text/javascript">
 		
-		// sqgopt();
-
-		let sqgOptCTABox = document.getElementById("sqgopt-cta-box");
-		let sqgOptTrigger1 = document.getElementById("sqgopt-trigger-box");
-		let sqgOptTrigger2 = document.getElementById("sqgopt-cta-trigger");
-		let sqgOptPostTrigger = document.getElementById("sqgopt-post-trigger");
-		let sqgOptModal = document.getElementById("sqgopt-modal");
-		let sqgOptCloseX = document.getElementById("sqgopt-closeX");
-		let sqgOptScreen = document.getElementById("sqgopt-screen");
-
-
-		const sqgoptSetTrigger = function() {
-			ctaBox = sqgOptCTABox.getBoundingClientRect();
-			sqgOptTrigger1.style.marginTop = ctaBox.top + "px";
-			sqgOptPostTrigger.style.marginTop = "-" + ctaBox.top + "px";
-		};
-
-		sqgoptSetTrigger();
-
-		window.addEventListener('scroll',function() {
-			sqgoptFindCTA()
-		});
-
-		// MODAL
-
-			sqgOptTrigger1.addEventListener("click", function() {
-				sqgOptModal.classList.remove("hidden");
-			});
-			sqgOptTrigger2.addEventListener("click", function() {
-				sqgOptModal.classList.remove("hidden");
-			});
-			sqgOptCloseX.addEventListener("click", function() {
-				sqgOptModal.classList.add("hidden");
-			});
-			sqgOptScreen.addEventListener("click", function() {
-				sqgOptModal.classList.add("hidden");
-			});
-
+		
 
 
 	</script>

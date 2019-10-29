@@ -56,19 +56,19 @@ body { margin: -5px; }
 		font-size: 1.5rem;
 	}
 
-	.sqgopt__trigger-box {
-		position: sticky;
-		top: 50vh;
+	.friendly__box {
+		position: fixed;
+		top: 80vh;
 		/*margin-top: 200px;*/
-		margin-left: 100%;
-		transform: translateX(-100%);
+		margin-left: 0;
+		/*transform: translateX(-100%);*/
 		padding: 10px;
 
 		height: 30px;
-		width: 50px;
+		width: 40px;
 		background-color: #985617;
-		border-bottom-left-radius: 15px;
-		border-top-left-radius: 15px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
 	}
 
 	.sqgopt__email-icon {
