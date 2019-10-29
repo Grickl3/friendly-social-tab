@@ -1,0 +1,215 @@
+/* 
+	font-family: 'Cormorant', Garamond, serif;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+*/ 
+
+body { margin: -5px; }
+
+/* ============================ NAV ====================== */
+
+	nav {
+		position: fixed;
+		z-index: 10;
+		width: 100vw;
+		background-color: #2f1f3f;
+		border-bottom: 2px solid white;
+		padding: 10px 0;
+	}
+
+	.nav__stuff {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		padding: 0 50px;
+		/*border: 1px solid gold;*/
+
+	}
+	.nav__home {}
+
+	.nav__link-text {		
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		color: white;
+		font-size: 1.6rem;
+		font-weight: 300;
+
+		margin: 0 30px;
+		/*border: 1px solid gold;*/
+	}
+	.nav__link-text:hover { color: #656e82; cursor: pointer;}
+
+/* ======================== END NAV ====================== */
+
+/* ============================ SQGOPT =================== */
+
+	.sqgopt__cta-box {
+		padding: 20px;
+		background-color: #985617;
+		text-align: center;
+	}
+
+	.sqgopt__cta-copy {
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 300;
+		line-height: 2.2rem;
+		color: #ffffff;
+		font-size: 1.5rem;
+	}
+
+	.sqgopt__trigger-box {
+		position: sticky;
+		top: 50vh;
+		/*margin-top: 200px;*/
+		margin-left: 100%;
+		transform: translateX(-100%);
+		padding: 10px;
+
+		height: 30px;
+		width: 50px;
+		background-color: #985617;
+		border-bottom-left-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+
+	.sqgopt__email-icon {
+		width: 40px;
+	}
+	.sqgopt__email-icon:hover {
+		cursor: pointer;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.screen { 
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		background-color: rgba(0,0,0,.6);
+	}
+
+	.close-x {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 50px;
+		height: 50px;
+		background-color: grey;
+		opacity: .5;
+		transition: opacity .2s;
+		border-radius: 25px;
+	}
+
+	.close-x:hover {
+		opacity: 1;
+		transition: opacity .2s;
+		cursor: pointer;
+	}
+
+	.arm {
+		position: absolute;
+		height: 5px;
+		width: 30px;
+		background-color: white;
+	}
+
+	.arm-1 { transform: rotate(45deg); }
+	.arm-2 { transform: rotate(-45deg); }
+
+	.sqgopt__modal-window {
+		position: fixed;
+		z-index: 15;
+		top: 15vh;
+		left: 15vw;
+		width: 50%;
+		height: 70%;
+		background-color: white;
+		border-radius: 33px;
+		padding: 4rem;
+		text-align: center;
+	}
+
+/* ======================== END SQGOPT =================== */
+
+/* ============================ TYPOGRAPHY =============== */
+
+	h1 {
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 900;
+		color: #1a2744;
+		font-size: 3.5rem;
+	}
+
+	p {
+		max-width: 38rem;
+
+		font-family: 'Cormorant', Garamond, serif;
+		font-weight: 400;
+		color: #151c24;
+		font-size: 1.5rem;
+		line-height: 2.25rem;
+	}
+
+	.body-text p {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+/* ======================== END TYPOGRAPHY =============== */
+
+/* ============================ LAYOUT GENERAL =========== */
+
+	.hero-img {
+	margin-top: 40px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	}
+
+	.header-box {
+		margin-top: -6rem;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		padding: 1rem 3rem;
+		max-width: 50%;
+		background-color: rgba(255,255,255,.8);
+	}
+
+	.small-space {
+		width: 10px;
+		height: 30px;
+	}
+
+	.large-space {
+		width: 10px;
+		height: 300px;
+	}
+
+/* ======================== END LAYOUT GENERAL =========== */
+
+/* ============================ FOOTER =================== */
+	footer {
+		display: flex;
+		justify-content: center;
+		/*align-content: center;*/
+
+		width: 100vw;
+		height: 250px;
+		background-color: #656e82;
+	}
+
+	.sqglz-logo {
+		margin-top: 95px;
+		height: 60px;
+		/*width:  30px;*/
+	}
+
+/* ======================== END FOOTER =================== */
+

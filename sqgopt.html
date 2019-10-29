@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SQG OPT</title>
+	<meta charset="utf-8">
+	<meta name="description" content="A friendlier way to gather permission assets">
+
+	<link rel="stylesheet" type="text/css" href="sqgopt.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant:400,400i|Montserrat:300,900&display=swap" rel="stylesheet">
+
+	<!-- <script type="text/javascript" src="sqgopt.js"></script> -->
+</head>
+<body>
+
+	<nav>
+		<div class="nav__stuff">
+			<span class="nav__home nav__link-text">HOME</span>
+			<div class="nav__pages">
+				<span class="nav__link-text">ABOUT</span>
+				<span class="nav__link-text">CONTACT</span>
+			</div><!-- NAV PAGES -->
+		</div><!-- NAV STUFF -->
+	</nav>
+	<img class="hero-img" src="friendlier.jpg" alt="neighbors shaking hands across a fence" nopin="nopin">
+
+	<div class="header-box">
+		<h1>Hello, World!</h1>
+		<p>Web developers have nearly universally accepted a cynical and mysanthropic pattern in embracing the involuntary pop-up as a means of permission asset gathering. In producing sqg-opt, I hope to demonstrate that this pattern can be challenged with superior design thinking to the end that site guests will feel more respected and — I believe — be more generous with their granting of permission assets.</p>
+	</div><!-- HEADER BOX -->
+
+	<!-- SQG OPT -->
+		<div id="sqgopt-cta-box" class="sqgopt__cta-box">
+			<span class="sqgopt__cta-copy">Hi, you're so cool!<br>Could I have your email address?<br>We could go for donuts.</span>
+			<div class="small-space"></div>
+			<img id="sqgopt-cta-trigger" class="sqgopt__email-icon" src="email.svg" alt="email opt in">
+		</div><!-- SQGOPT CTA -->
+
+
+		<div id="sqgopt-trigger-box" class="sqgopt__trigger-box">
+			<img class="sqgopt__email-icon" src="email.svg" alt="email opt in">
+		</div><!-- SQGOPT TRIGGER -->
+
+		<div id="sqgopt-modal" class="hidden">
+			<div id="sqgopt-screen" class="screen"></div>
+			
+			<div class="sqgopt__modal-window">
+			<div id="sqgopt-closeX" class="close-x">
+				<div class="arm arm-1"></div>
+				<div class="arm arm-2"></div>
+			</div>
+				<p>Insert Mailchimp form here.</p>
+			</div><!-- MODAL WINDOW -->
+		</div><!-- SQGOPT MODAL -->
+
+	<!-- END SQG OPT -->
+
+	<div id="sqgopt-post-trigger">
+		<div class="body-text">
+			<script src="https://verbingnounssincewhen.com/p/7"></script>
+		</div><!-- BODY TEXT -->
+	</div><!-- POST TRIGGER -->
+
+	<div class="large-space"></div>
+
+	<footer>
+		<a href="http://sqglz.com/" target="_blank"><img class="sqglz-logo" src="sqg-white.svg" alt="sqglz logo"></a>
+	</footer>
+
+	<script type="text/javascript">
+		
+		// sqgopt();
+
+		let sqgOptCTABox = document.getElementById("sqgopt-cta-box");
+		let sqgOptTrigger1 = document.getElementById("sqgopt-trigger-box");
+		let sqgOptTrigger2 = document.getElementById("sqgopt-cta-trigger");
+		let sqgOptPostTrigger = document.getElementById("sqgopt-post-trigger");
+		let sqgOptModal = document.getElementById("sqgopt-modal");
+		let sqgOptCloseX = document.getElementById("sqgopt-closeX");
+		let sqgOptScreen = document.getElementById("sqgopt-screen");
+
+
+		const sqgoptSetTrigger = function() {
+			ctaBox = sqgOptCTABox.getBoundingClientRect();
+			sqgOptTrigger1.style.marginTop = ctaBox.top + "px";
+			sqgOptPostTrigger.style.marginTop = "-" + ctaBox.top + "px";
+		};
+
+		sqgoptSetTrigger();
+
+		window.addEventListener('scroll',function() {
+			sqgoptFindCTA()
+		});
+
+		// MODAL
+
+			sqgOptTrigger1.addEventListener("click", function() {
+				sqgOptModal.classList.remove("hidden");
+			});
+			sqgOptTrigger2.addEventListener("click", function() {
+				sqgOptModal.classList.remove("hidden");
+			});
+			sqgOptCloseX.addEventListener("click", function() {
+				sqgOptModal.classList.add("hidden");
+			});
+			sqgOptScreen.addEventListener("click", function() {
+				sqgOptModal.classList.add("hidden");
+			});
+
+
+
+	</script>
+
+</body>
+</html>
