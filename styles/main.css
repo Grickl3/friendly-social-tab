@@ -5,6 +5,41 @@
 
 body { margin: -5px; }
 
+/* ============================ TYPOGRAPHY =============== */
+
+	h1 {
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 900;
+		color: #1a2744;
+		font-size: 3.5rem;
+	}
+
+	h5 {
+		margin-top: -1.7rem;
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 300;
+		color: #1a2744;
+		font-size: 2.8rem;
+	}
+
+	p {
+		max-width: 38rem;
+
+		font-family: 'Cormorant', Garamond, serif;
+		font-weight: 400;
+		color: #151c24;
+		font-size: 1.5rem;
+		line-height: 2.25rem;
+	}
+
+	.body-text p {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+/* ======================== END TYPOGRAPHY =============== */
+
+
 /* ============================ NAV ====================== */
 
 	nav {
@@ -54,21 +89,6 @@ body { margin: -5px; }
 		line-height: 2.2rem;
 		color: #ffffff;
 		font-size: 1.5rem;
-	}
-
-	.friendly__box {
-		position: fixed;
-		top: 80vh;
-		/*margin-top: 200px;*/
-		margin-left: 0;
-		/*transform: translateX(-100%);*/
-		padding: 10px;
-
-		height: 30px;
-		width: 40px;
-		background-color: #985617;
-		border-bottom-right-radius: 5px;
-		border-top-right-radius: 5px;
 	}
 
 	.sqgopt__email-icon {
@@ -139,31 +159,6 @@ body { margin: -5px; }
 
 /* ======================== END SQGOPT =================== */
 
-/* ============================ TYPOGRAPHY =============== */
-
-	h1 {
-		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
-		font-weight: 900;
-		color: #1a2744;
-		font-size: 3.5rem;
-	}
-
-	p {
-		max-width: 38rem;
-
-		font-family: 'Cormorant', Garamond, serif;
-		font-weight: 400;
-		color: #151c24;
-		font-size: 1.5rem;
-		line-height: 2.25rem;
-	}
-
-	.body-text p {
-		margin-left: 50%;
-		transform: translateX(-50%);
-	}
-
-/* ======================== END TYPOGRAPHY =============== */
 
 /* ============================ LAYOUT GENERAL =========== */
 
