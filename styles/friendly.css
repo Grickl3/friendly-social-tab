@@ -52,8 +52,16 @@
 
 .friendly__link-icon {
 	width: 22px;
+	/*max-height: 28px;*/
 	/*height: 25px;*/
 }
+
+.friendly__link-icon__tall {
+	margin-top: 50%;
+	transform: translateY(-50%);
+	height: 28px;
+}
+
 .sqgopt__email-icon:hover {
 	cursor: pointer;
 }
