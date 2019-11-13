@@ -1,0 +1,20 @@
+
+.fr__color-copy {
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 300;
+		color: #ffffff;
+		font-size: .85rem;
+}
+
+.fr__color-field {
+	margin: 3px 0;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.fr__color-field__main {background-color: #744309}
+.fr__color-field__secondary {background-color: #0c4c31}
+.fr__color-field__tertiary {background-color: }
+.fr__icons {background-color: #50724d}
+.fr__body-text {background-color: #746476}
+.fr__link-text {background-color: #d49c43}
