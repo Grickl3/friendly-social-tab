@@ -46,14 +46,14 @@
 
 	</div><!-- HEADER BOX -->
 
-	<!-- SQG OPT -->
+	<!-- TL;DR -->
 		<div id="sqgopt-cta-box" class="sqgopt__cta-box">
 			<p class="sqgopt__tldr-copy">TL; DR<br>If you're totally convinced, and just want to use the damn sidebar, the below link will take you straight to the GitHub project. It's all yours.</p>
 			<div class="small-space"></div>
 			<a href="https://github.com/Grickl3/friendly-social-tab/blob/master/README.md" target="_blank"><img id="sqgopt-cta-trigger" class="sqgopt__email-icon" src="img/github.svg" alt="email opt in"></a>
 		</div><!-- SQGOPT CTA -->
 
-	<!-- END SQG OPT -->
+	<!-- END TL;DR -->
 
 	<!-- FRIENDLY SOCIAL SIDEBAR -->
 
@@ -82,6 +82,18 @@
 
 	<!-- END FRIENDLY SOCIAL SIDEBAR -->
 
+	<div id="newsletter-modal" class="hidden">
+		<div id="newsletter-screen" class="screen"></div>
+		
+		<div class="sqgopt__modal-window">
+		<div id="newsletter-closeX" class="close-x">
+			<div class="arm arm-1"></div>
+			<div class="arm arm-2"></div>
+		</div>
+			<p>Insert Mailchimp form here.</p>
+		</div><!-- MODAL WINDOW -->
+	</div><!-- SQGOPT MODAL -->
+
 	<div id="sqgopt-post-trigger">
 		<div class="body-text">
 			<script src="https://verbingnounssincewhen.com/p/7"></script>
@@ -96,7 +108,21 @@
 
 	<script type="text/javascript">
 		
-		
+		const newsTrig = document.getElementById("newsletter-trigger");
+		const newsModal = document.getElementById("newsletter-modal");
+		const newsCloseX = document.getElementById("newsletter-closeX");
+		const newsScreen = document.getElementById("newsletter-screen");
+
+		newsTrig.addEventListener("click", function() {
+			newsModal.classList.remove("hidden");
+		});
+		newsCloseX.addEventListener("click", function() {
+			newsModal.classList.add("hidden");
+		});
+		newsScreen.addEventListener("click", function() {
+			newsModal.classList.add("hidden");
+		});
+
 
 
 	</script>

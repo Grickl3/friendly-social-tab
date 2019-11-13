@@ -112,7 +112,7 @@
 .arm-1 { transform: rotate(45deg); }
 .arm-2 { transform: rotate(-45deg); }
 
-.sqgopt__modal-window {
+.newsletter__modal-window {
 	position: fixed;
 	z-index: 15;
 	top: 15vh;
