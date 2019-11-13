@@ -74,9 +74,9 @@
 				<img class="friendly__link-icon__tall" src="img/facebook.svg" alt="email opt in">
 			</div></a><!-- END FACEBOOK BOX -->
 
-			<a href="https://www.pinterest.com/foreverredwood/" target="_social"><div class="friendly__link-box">
+			<div id="sharing-trigger" class="friendly__link-box">
 				<img class="friendly__link-icon" src="img/share.svg" alt="email opt in">
-			</div></a><!-- END SHARE BOX -->
+			</div><!-- END SHARE BOX -->
 
 		</div><!-- SQGOPT TRIGGER -->
 
@@ -92,7 +92,19 @@
 		</div>
 			<p>Insert Mailchimp form here.</p>
 		</div><!-- MODAL WINDOW -->
-	</div><!-- SQGOPT MODAL -->
+	</div><!-- NEWSLETTER MODAL -->
+
+	<div id="sharing-modal" class="hidden">
+		<div id="sharing-screen" class="screen"></div>
+		
+		<div class="sqgopt__modal-window">
+		<div id="sharing-closeX" class="close-x">
+			<div class="arm arm-1"></div>
+			<div class="arm arm-2"></div>
+		</div>
+			<p>Insert sharing form here.</p>
+		</div><!-- MODAL WINDOW -->
+	</div><!-- SHARING MODAL -->
 
 	<div id="sqgopt-post-trigger">
 		<div class="body-text">
@@ -108,6 +120,8 @@
 
 	<script type="text/javascript">
 		
+		// ------- NEWSLETTER MODAL ------------------
+
 		const newsTrig = document.getElementById("newsletter-trigger");
 		const newsModal = document.getElementById("newsletter-modal");
 		const newsCloseX = document.getElementById("newsletter-closeX");
@@ -123,6 +137,22 @@
 			newsModal.classList.add("hidden");
 		});
 
+		// ------- SHARING MODAL ------------------
+
+		const shareTrig = document.getElementById("sharing-trigger");
+		const shareModal = document.getElementById("sharing-modal");
+		const shareCloseX = document.getElementById("sharing-closeX");
+		const shareScreen = document.getElementById("sharing-screen");
+
+		shareTrig.addEventListener("click", function() {
+			shareModal.classList.remove("hidden");
+		});
+		shareCloseX.addEventListener("click", function() {
+			shareModal.classList.add("hidden");
+		});
+		shareScreen.addEventListener("click", function() {
+			shareModal.classList.add("hidden");
+		});
 
 
 	</script>
