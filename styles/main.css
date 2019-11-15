@@ -14,6 +14,13 @@ body { margin: -5px; }
 		font-size: 3.5rem;
 	}
 
+	h2 {
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 300;
+		color: #1a2744;
+		font-size: 3rem;
+	}
+
 	h3 {
 		margin: 4rem 0 -1rem 0;
 		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
@@ -40,6 +47,17 @@ body { margin: -5px; }
 		line-height: 2.25rem;
 	}
 
+	ul {
+		text-align: left;
+	}
+
+	li {
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 300;
+		color: #151c24;
+		font-size: 1.5rem;
+	}
+
 	.body-text {
 		margin-left: 50%;
 		transform: translateX(-50%);
@@ -47,11 +65,21 @@ body { margin: -5px; }
 	}
 
 	a {
+		color: #656e82;
 		text-decoration: none;
+	}
+
+	a:hover {
+		color: #985617;
 	}
 
 	strong {
 		font-weight: 700;
+	}
+
+	.aside {
+		font-family: monospace;
+		color: #888888;
 	}
 
 /* ======================== END TYPOGRAPHY =============== */
@@ -205,6 +233,11 @@ body { margin: -5px; }
 	.large-space {
 		width: 10px;
 		height: 300px;
+	}
+
+	.cartoon {
+		margin: 3rem 0;
+		width: 90%;
 	}
 
 /* ======================== END LAYOUT GENERAL =========== */
