@@ -83,26 +83,29 @@
 
 	<!-- END FRIENDLY SOCIAL SIDEBAR -->
 
-	<div id="newsletter-modal" class="hidden">
-		<div id="newsletter-screen" class="screen"></div>
+	<div id="newsletter-screen" class="screen hidden"></div>
+	<div id="newsletter-modal" class="modal-box hidden">
 		
-		<div class="sqgopt__modal-window">
 		<div id="newsletter-closeX" class="close-x">
 			<div class="arm arm-1"></div>
 			<div class="arm arm-2"></div>
-		</div>
+		</div><!-- CLOSE X -->
+
+		<div class="sqgopt__modal-window">
 			<p>Insert Mailchimp form here.</p>
 		</div><!-- MODAL WINDOW -->
 	</div><!-- NEWSLETTER MODAL -->
 
-	<div id="sharing-modal" class="hidden">
-		<div id="sharing-screen" class="screen"></div>
+	<div id="sharing-screen" class="screen hidden"></div>
+	<div id="sharing-modal" class="modal-box hidden">
 		
-		<div class="sqgopt__modal-window">
+
 		<div id="sharing-closeX" class="close-x">
 			<div class="arm arm-1"></div>
 			<div class="arm arm-2"></div>
-		</div>
+		</div><!-- CLOSE X -->
+
+		<div class="sqgopt__modal-window">
 
 		<p>We take incredible pride in the craftsmanship that goes into our products. And, we very much appreciate you noticing and taking the time to share our work with your friends and family.</p>
 
@@ -294,12 +297,15 @@
 
 		newsTrig.addEventListener("click", function() {
 			newsModal.classList.remove("hidden");
+			newsScreen.classList.remove("hidden");
 		});
 		newsCloseX.addEventListener("click", function() {
 			newsModal.classList.add("hidden");
+			newsScreen.classList.add("hidden");
 		});
 		newsScreen.addEventListener("click", function() {
 			newsModal.classList.add("hidden");
+			newsScreen.classList.add("hidden");
 		});
 
 		// ------- SHARING MODAL ------------------
@@ -311,12 +317,15 @@
 
 		shareTrig.addEventListener("click", function() {
 			shareModal.classList.remove("hidden");
+			shareScreen.classList.remove("hidden");
 		});
 		shareCloseX.addEventListener("click", function() {
 			shareModal.classList.add("hidden");
+			shareScreen.classList.add("hidden");
 		});
 		shareScreen.addEventListener("click", function() {
 			shareModal.classList.add("hidden");
+			shareScreen.classList.add("hidden");
 		});
 
 

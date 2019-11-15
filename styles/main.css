@@ -150,8 +150,34 @@ body { margin: -5px; }
 		display: none;
 	}
 
+	.modal-box {
+		position: fixed;
+		z-index: 10;
+		top: 15vh;
+		left: 20vw;
+		right: 20vw;
+		bottom: 15vh;
+		background-color: white;
+		border-radius: 15px;
+		padding: 3rem .75rem .75rem .75rem;
+		/*border: 1px solid gold;*/
+	}
+
+	.sqgopt__modal-window {
+		position: relative;
+		z-index: 11;
+		height: 100%;
+		width: 100%;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		overflow: scroll;
+		background-color: white;
+		text-align: center;
+	}
+
 	.screen { 
 		position: fixed;
+		z-index: 9;
 		top: 0;
 		height: 100vh;
 		width: 100vw;
@@ -160,6 +186,7 @@ body { margin: -5px; }
 
 	.close-x {
 		position: absolute;
+		z-index: 12;
 		top: 1rem;
 		right: 1rem;
 
@@ -191,19 +218,6 @@ body { margin: -5px; }
 
 	.arm-1 { transform: rotate(45deg); }
 	.arm-2 { transform: rotate(-45deg); }
-
-	.sqgopt__modal-window {
-		position: fixed;
-		z-index: 15;
-		top: 15vh;
-		left: 15vw;
-		width: 50%;
-		height: 70%;
-		background-color: white;
-		border-radius: 15px;
-		padding: 4rem;
-		text-align: center;
-	}
 
 /* ======================== END SQGOPT =================== */
 
