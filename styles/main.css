@@ -235,6 +235,11 @@ body { margin: -5px; }
 		height: 300px;
 	}
 
+	.inline-img {
+		margin: 1.5rem 0;
+		width: 100%;
+	}
+
 	.cartoon {
 		margin: 3rem 0;
 		width: 90%;
